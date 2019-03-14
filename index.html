@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>DEVSOC'19</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="icon" type="image/png" href="title_logo.png" />
+    <style>
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+  margin-left: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1c5998; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: grey; 
+}
+</style>
+</head>
+
+<body id="top">
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/logo1.png" alt="Homepage">  
+            </a>
+        </div> <!-- end header-logo -->
+
+        <nav class="header-nav">
+
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+            <div class="header-nav__content">
+                <h3>DEVSOC'19</h3>
+                
+                <ul class="header-nav__list">
+                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                    <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
+                    <li><a class="smoothscroll"  href="#services" title="services">Event Flow</a></li>
+                    <li><a class="smoothscroll"  href="#works" title="works">FAQs</a></li>
+                    <li><a href="https://devsoc.hackerearth.com/" target="_blank" title="contact">Apply Now</a></li>
+                </ul>
+
+
+
+            </div> <!-- end header-nav__content -->
+
+        </nav> <!-- end header-nav -->
+
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-icon"></span>
+        </a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section" >
+        
+        <video poster="images/bg.jpg" autoplay muted loop id="myVideo">
+            <source src="DEVINRO.mp4" type="video/mp4"/>
+            
+        </video>
+    
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+                <h1>
+                DEVSOC'19<br>
+                <span style="font-size: 4rem;color: white; font-family: 'Barlow Condensed', sans-serif;">Developer's Sprint of Code</span>
+                </h1>
+
+                <p style="font-size:26px;">
+                Coders aren't born <br>
+                rather are made.
+                </p>
+                <p>
+                <a class="lead2" href="https://devsoc.hackerearth.com/" target="_blank">APPLY NOW</a></p>  
+                
+            </div> <!-- end home-content__main -->
+
+        </div> <!-- end home-content -->
+    
+        <ul class="home-sidelinks">
+            <li><a class="smoothscroll" href="#about">About<span>What is DEVSOC?</span></a></li>
+            <li><a class="smoothscroll" href="#services">Event Flow<span>Our Event's Timeline.</span></a></li>
+            <li><a  class="smoothscroll" href="#works">FAQs<span>Answers to some of your questions</span></a></li>
+            <li><a  href="https://devsoc.hackerearth.com/" target="_blank">APPLY NOW</a></li>
+        </ul> <!-- end home-sidelinks -->
+
+        <ul class="home-social">
+            <li class="home-social-title">Follow Us</li>
+            <li><a href="https://www.facebook.com/codechefvituniversity/" target="_blank">
+                <i class="fab fa-facebook"></i>
+                <span class="home-social-text">Facebook</span>
+            </a></li>
+            <li><a href="https://www.instagram.com/codechefvit/" target="_blank">
+                <i class="fab fa-instagram"></i>
+                <span class="home-social-text">Instagram</span>
+            </a></li>
+            <li><a href="https://www.linkedin.com/company/codechef-vit/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+                <span class="home-social-text">LinkedIn</span>
+            </a></li>
+        </ul> <!-- end home-social -->
+
+        <a href="#about" class="home-scroll smoothscroll">
+            <span class="home-scroll__text">Scroll Down</span>
+            <span class="home-scroll__icon"></span>
+        </a> <!-- end home-scroll -->
+
+    </section> <!-- end s-home -->
+
+
+    <!-- stats
+    ================================================== -->
+    <section id="stats" class="s-stats">
+
+        <div class="row stats block-1-4 block-m-1-2 block-mob-full" id="display" data-aos="fade-up">
+                
+            <div class="col-block stats__col ">
+                <div class="stats__count" id="days"></div>
+                <h5>Days</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count" id="hours"></div>
+                <h5>Hours</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count" id="mins"></div>
+                <h5>Minutes</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count" id="secs"></div>
+                <h5>Seconds</h5> 
+            </div>
+
+        </div> <!-- end stats -->
+
+    </section> <!-- end s-stats -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id='about' class="s-about" >
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead" >What is DEVSOC'19</h3>
+                <h1 class="display-1" style="color: white">About DEVSOC'19</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row" data-aos="fade-up">
+            <div class="col-full">
+                <p class="lead" style="color: #f1f1f1; text-align: justify">
+                Welcome to DEVSOC'19. It is an open hack, a sprint if you must. Hackathon, but just one of its kind. We guide you wherever and whenever you may need us but the goal is up to you to reach. You reach, we reward you. Simplicity is what we embrace and try you must. No domains, no tracks, enlighten your creativity and walk into our spotlight. We shall give you the platform, its upon you to decide and conquer the baton.  Get ready to experience a one of its kind hackathon, presented to you by CODECHEF-VIT. Hope to see you !
+                </p>
+            </div>
+        </div> <!-- end about-desc -->
+
+
+    </section> <!-- end s-about -->
+
+
+    <!-- services
+    ================================================== -->
+    <section id='services' class="s-services white">
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Our Event's Timeline</h3>
+                <h1 class="display-1">Event Flow</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row" data-aos="fade-up">
+            <div class="col-full">
+            <p class="lead1">
+                <img src="images/download.png"  width="100%" height="auto">
+            </p>
+            <p class="lead2">
+                <img src="images/download1.png" width="100%" height="auto">
+            </p>
+        </div> <!-- end about-desc -->
+
+
+    </section> <!-- end s-services -->
+
+
+    <!-- works
+    ================================================== -->
+    <section id='works' class="s-works">
+                
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Answers to some of your Questions</h3>
+                <h1 class="display-1">FAQs</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row">
+                
+            <div class="about-process process block-1-2 block-tab-full">
+
+                <div class="process__vline-left"></div>
+                <div class="process__vline-right"></div>
+
+                <div class="col-block process__col" data-item="1" data-aos="fade-up">
+                    <div class="process__text">
+                        <h4>What is the venue of the hackathon?</h4>
+
+                        <p>
+                        First Phase of the Hackathon is Online that is Idea submission. Main event which is from 22nd Feb will be conducted in Anna Auditorium, VIT Vellore.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-block process__col" data-item="2" data-aos="fade-up">
+                    <div class="process__text">
+                        <h4>What is the cost of the hackathon?</h4>
+
+                        <p>
+                        There is no Registration fee for the Hackathon. It is absolutely free.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-block process__col" data-item="3" data-aos="fade-up">
+                    <div class="process__text">
+                        <h4>Is it necessary for whole team to be present all the time?</h4>
+
+                        <p>
+                        No, not necessarily, but at least one member should be present while pitching.
+                        </p>
+                    </div>
+                </div>
+
+            </div> <!-- end process -->
+
+        </div> <!-- end about-stats -->
+
+
+        <div class="cl-go-top">
+
+            <a class="smoothscroll" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+        </div>
+        
+    </section> <!-- end s-works -->
+
+
+
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact">
+
+        <center><p>&copy;Copyright CodeChef-VIT | All Rights Reserved.</p></center>
+
+    </section> <!-- end s-contact -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">            
+        </div>
+    </div>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
