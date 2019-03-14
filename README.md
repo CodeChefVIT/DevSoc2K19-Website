@@ -1,16 +1,16 @@
 # DevSoc2K19-Website
 The official website of DevSoc 2K19 - CodeChef VIT Vellore
 
-# Requirements
+### Requirements
 
 - node >=8.x
 
-# Installation
+### Installation
 
 ```bash
 npm install
 ```
-# Running
+### Running
 
 ```bash
 npm start
